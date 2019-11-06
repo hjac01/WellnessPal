@@ -5,7 +5,7 @@ class App extends Component {
 
   constructor(props) {
      super(props);
-     this.state = { name: 'Guest', weight: 90, height: 180, bmi: 27, message: '', optimalweight: '', time: new Date().toLocaleTimeString() };
+     this.state = { weight: 177, height: 70, bmi: 25, message: '', optimalweight: '', time: new Date().toLocaleTimeString() };
      this.submitMe = this.submitMe.bind(this);
      this.heightchange = this.heightchange.bind(this);
      this.weightchange = this.weightchange.bind(this);
@@ -31,7 +31,7 @@ class App extends Component {
 
   calculateBMI(){
 
-      var heightSquared = (this.state.height/100  * this.state.height/100);
+      var heightSquared = (this.state.height*703  / this.state.height);
       var bmi = this.state.weight / heightSquared;
       var low = Math.round(18.5 * heightSquared);                                                         
       var high = Math.round(24.99 * heightSquared);    
@@ -80,19 +80,15 @@ class App extends Component {
           <h2>BMI Calculator</h2>
         </div>
           <form onSubmit={this.submitMe}>
-            <label>
-              Please enter your name
-            </label>
-            <input type="text" name="name" value={this.state.name} onBlur={this.blur} onChange={this.change}   />
              <label>
-             Enter your height in cm: 
+             Enter your height in inches: 
             </label>
             <input type="text" name="height" value={this.state.height} onBlur={this.blur} onChange={this.heightchange}   />
              <label>
-             Enter your weight in kg : 
+             Enter your weight in lbs : 
             </label>
             <input type="text" name="weight" value={this.state.weight} onChange={this.weightchange}    />
-            <label>{this.state.checked} Hello {this.state.name}, How are you my friend? It's currently  {this.state.time} where you are living. Your BMI is {this.state.bmi} </label>
+            <label> Your BMI is {this.state.bmi} </label>
               <label>{this.state.message}</label>
               <label>{this.state.optimalweight}</label>
              
