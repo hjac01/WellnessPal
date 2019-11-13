@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-
+import "./stylesBmi.css"
 
 class Bmi extends Component {
 
   constructor(props) {
     super(props);
-    this.state = { name: 'Guest', weight: 90, height: 180, bmi: 27, message: '', optimalweight: '', time: new Date().toLocaleTimeString() };
+    this.state = { name: 'Guest', weight: 175, height: 70, bmi: '', message: '', optimalweight: '', time: new Date().toLocaleTimeString() };
     this.submitMe = this.submitMe.bind(this);
     this.heightchange = this.heightchange.bind(this);
     this.weightchange = this.weightchange.bind(this);
@@ -63,9 +63,6 @@ class Bmi extends Component {
    this.setState({time: new Date().toLocaleTimeString()})
  }
 
-//  componentDidMount(){
-//    setInterval(this.ticker, 60000);
-//  }
 
  change(e){
    e.preventDefault();
@@ -75,27 +72,30 @@ class Bmi extends Component {
 
  render() {
    return (
+     <container>
      <div className="Bmi">
-       <div className="Bmi-header">
+     <div>
          <h2>BMI Calculator</h2>
        </div>
          <form onSubmit={this.submitMe}>
             <label>
             Enter your height in inches: 
            </label>
+           <br></br>
            <input type="text" name="height" value={this.state.height} onBlur={this.blur} onChange={this.heightchange}   />
+           <br></br>
             <label>
             Enter your weight in pounds : 
            </label>
+           <br></br>
            <input type="text" name="weight" value={this.state.weight} onChange={this.weightchange}    />
-           <label>{this.state.checked} Hello {this.state.name}, How are you my friend? It's currently  {this.state.time} where you are living. Your BMI is {this.state.bmi} </label>
-             <label>{this.state.message}</label>
-             <label>{this.state.optimalweight}</label>
-            
+           <br></br>
+           <label>{this.state.checked} Hello {this.state.name}, Your BMI is {this.state.bmi} </label>
            <input type="submit" value="Submit"/>
          </form>
      
      </div>
+     </container>
    );
  }
 }

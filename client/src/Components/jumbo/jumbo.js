@@ -1,5 +1,8 @@
 import React from 'react';
+import "./jumbo.css"
+//import 'bootstrap/dist/css/bootstrap.min.css';
 import { Jumbotron, Container } from 'reactstrap';
+
 
 const Jumbo = (props) => {
     
@@ -8,7 +11,7 @@ const Jumbo = (props) => {
       <Jumbotron fluid>
         <Container fluid>
           <h1 className="display-3">WellnessPal</h1>
-          <p className="lead">Welcome to WellnessPal, don't forget to update your food and exercise logs</p>
+          <p className="lead">Welcome to WellnessPal, let us provide you the building blocks for a better life.</p>
         </Container>
       </Jumbotron>
     </div>
