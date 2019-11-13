@@ -13,7 +13,7 @@ class Bmr extends Component {
     this.change = this.change.bind(this);  
     this.ticker = this.ticker.bind(this); 
     this.blur = this.blur.bind(this); 
-    this.calculateBMR = this.calculateBMR.bind(this); 
+   // this.calculateBMR = this.calculateBMR.bind(this); 
 }
 
 
@@ -36,27 +36,27 @@ agechange(e){
    e.preventDefault();
  }
 
- calculateBMR(){
+ //calculateBMR(){
 //If you’re a man, your BMR is equal to: 66 + (6.23 x weight in pounds) + (12.7 x height in inches) - (6.8 x age in years).
-let MBmr = 66 + (6.23 * this.state.weight) + (12.7 * this.state.height) - (6.8 * this.state.agechange) }
+// let MBmr = 66 + (6.23 * this.state.weight) + (12.7 * this.state.height) - (6.8 * this.state.agechange) }
 
-     if () {
+//      if () {
         
 
-        // let height = (this.state.height  * 12.7);
-        // let weight = (this.state.weight * 6.23) + 66;
-        // let age = (this.state.age * 6.8)
-        // If you're a woman, your BMR is equal to: 655 + (4.35 x weight in pounds) + (4.7 x height in inches) - (4.7 x age in years).
+//         // let height = (this.state.height  * 12.7);
+//         // let weight = (this.state.weight * 6.23) + 66;
+//         // let age = (this.state.age * 6.8)
+//         // If you're a woman, your BMR is equal to: 655 + (4.35 x weight in pounds) + (4.7 x height in inches) - (4.7 x age in years).
 
-     } else {
+//      } else {
 
-        // let FBmr = 655 + (4.23 * this.state.weight) + (4.7 * this.state.height) - (4.7 * this.state.agechange)
+//         // let FBmr = 655 + (4.23 * this.state.weight) + (4.7 * this.state.height) - (4.7 * this.state.agechange)
 
-        // let Fheight = (this.state.height  * 4.35);
-        // let Fweight = (this.state.weight * 6.23) + 66;
-        // let Fage = (this.state.age * 6.8)
+//         // let Fheight = (this.state.height  * 4.35);
+//         // let Fweight = (this.state.weight * 6.23) + 66;
+//         // let Fage = (this.state.age * 6.8)
 
-     }
+//      }
 
 
  submitMe(e) {
