@@ -1,0 +1,21 @@
+.Bmi{
+    position:absolute;
+    width:200px;
+    height:200px;
+    background: lightblue;
+    bottom:0px;
+    right:25%;
+    left:50%;
+    margin-left:-150px;
+
+}
+
+/* .row {
+    display: block;
+    color: aqua;
+    width: 10%;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+} */
+
