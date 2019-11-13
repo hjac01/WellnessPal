@@ -5,7 +5,7 @@ class Bmr extends Component {
 
   constructor(props) {
     super(props);
-    this.state = { age: 41, weight: 175, height: 70, bmi: '', message: '', optimalweight: '', time: new Date().toLocaleTimeString() };
+    this.state = { age: 41, weight: 175, height: 70, bmr: ''};
     this.submitMe = this.submitMe.bind(this);
     this.agechange = this.agechange.bind(this);
     this.heightchange = this.heightchange.bind(this);
@@ -13,7 +13,7 @@ class Bmr extends Component {
     this.change = this.change.bind(this);  
     this.ticker = this.ticker.bind(this); 
     this.blur = this.blur.bind(this); 
-    this.calculateBMR = this.calculateBMI.bind(this); 
+    this.calculateBMR = this.calculateBMR.bind(this); 
 }
 
 
@@ -38,10 +38,10 @@ agechange(e){
 
  calculateBMR(){
 //If you’re a man, your BMR is equal to: 66 + (6.23 x weight in pounds) + (12.7 x height in inches) - (6.8 x age in years).
+let MBmr = 66 + (6.23 * this.state.weight) + (12.7 * this.state.height) - (6.8 * this.state.agechange) }
 
-
-     if (male = true){
-         let MBmr = 66 + (6.23 * this.state.weight) + (12.7 * this.state.height) - (6.8 * this.state.agechange)
+     if () {
+        
 
         // let height = (this.state.height  * 12.7);
         // let weight = (this.state.weight * 6.23) + 66;
@@ -50,7 +50,7 @@ agechange(e){
 
      } else {
 
-        let FBmr = 655 + (4.23 * this.state.weight) + (4.7 * this.state.height) - (4.7 * this.state.agechange)
+        // let FBmr = 655 + (4.23 * this.state.weight) + (4.7 * this.state.height) - (4.7 * this.state.agechange)
 
         // let Fheight = (this.state.height  * 4.35);
         // let Fweight = (this.state.weight * 6.23) + 66;
@@ -77,7 +77,7 @@ agechange(e){
 
  render() {
    return (
-     <container>
+  //   <container>
      <div className="Bmr">
      <div>
          <h2>BMR Calculator</h2>
@@ -106,7 +106,7 @@ agechange(e){
          </form>
      
      </div>
-     </container>
+    // </container>
    );
  }
 }

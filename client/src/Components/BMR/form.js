@@ -2,7 +2,7 @@ import React from "react";
 import "./bmr.css";
 
 
-class Form extends React.Component {
+class BMForm extends React.Component {
   render() {
     return (
       <div>
@@ -17,4 +17,4 @@ class Form extends React.Component {
 }
 
 
-export default Form;
+export default BMForm;
