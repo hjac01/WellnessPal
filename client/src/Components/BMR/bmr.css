@@ -1,11 +1,5 @@
-.Bmr{
-    position: relative;
-    width:200px;
-    height:200px;
-    background: lightblue;
-    bottom:0px;
-    right:25%;
-    left:50%;
-    margin-left:-150px;
+.bmr{
+float: left;
+width: 200;
 
 }

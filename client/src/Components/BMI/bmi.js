@@ -72,7 +72,7 @@ class Bmi extends Component {
 
  render() {
    return (
-   //  <container>
+   <container id = "calcs">
      <div className="Bmi">
      <div>
          <h2>BMI Calculator</h2>
@@ -95,7 +95,7 @@ class Bmi extends Component {
          </form>
      
      </div>
-   //  </container>
+     </container>
    );
  }
 }
