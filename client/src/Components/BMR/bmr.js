@@ -67,7 +67,8 @@ changeAll=(e)=> {
 
  render() {
    return (
-  //   <container>
+   <container id = "calcs">
+  
      <div className="Bmr">
      <div>
          <h2>BMR Calculator</h2>
@@ -98,7 +99,8 @@ changeAll=(e)=> {
          </form>
      
      </div>
-    // </container>
+     </container>
+   
    );
  }
 }
