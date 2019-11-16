@@ -27,6 +27,7 @@ function App() {
             <HeaderRow title="Wellness-Pal" />
             <HeaderTabs className='header-color' ripple activeTab={1} onChange={(tabId) => { }}>
                 <Tab>BMI calculator</Tab>
+                <tab>BMR calculator</tab>
                 <Tab>Log in</Tab>
                 <Tab>Articles</Tab>
             </HeaderTabs>
