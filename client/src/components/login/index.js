@@ -1,5 +1,5 @@
 import React from 'react';
-import {Card, CardTitle, CardText, CardActions, Button, Textfield} from 'react-mdl';
+import {Card, CardTitle, CardText, Button, Textfield} from 'react-mdl';
 
 const Login = () => {
     return (
