@@ -1,17 +1,17 @@
 import React from 'react';
-import {Grid, Cell, TableHeader, DataTable, List, ListItem, FABButton, Icon} from 'react-mdl';
-import avatar from './image/avatar.png';
+import {Grid, Cell, TableHeader, DataTable, FABButton, Icon} from 'react-mdl';
+// import image from './image/avatar';
 
 
 const Profile = () => {
     return (
         <div style={{width: '100%', margin: 'auto', top:'40px'}}>
             <div className="profile-welcome">
-                <img 
-                    src={avatar}
+                {/* <img 
+                    src={image}
                     alt="avatar"
                     className="avatar-img"
-                />
+                /> */}
                 <h1> Welcome Back to Wellness Pal User (will display user name)</h1>
             </div>
 
