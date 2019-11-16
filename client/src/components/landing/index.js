@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, Cell, Card, CardActions,CardMenu, CardTitle, CardText, Button, IconButton} from 'react-mdl';
+import { Card, CardActions, CardTitle, CardText, Button} from 'react-mdl';
 
 const Landing = () => {
     return (

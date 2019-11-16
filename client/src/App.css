@@ -20,3 +20,88 @@
 .App-link {
   color: #09d3ac;
 }
+
+body {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  background: #134E5E;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #71B280, #134E5E);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #71B280, #134E5E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
+}
+.header-color {
+  background: #000000;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.profile-welcome{
+  background: black;
+  opacity: .8;
+  width: 75%;
+  top: 30px;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.profile-welcome h1{
+  color: #71B280;
+  font-size: bold;
+  text-align: center;
+}
+
+.BMI-section {
+  background: black;
+  opacity: .8;
+  height: 800px;
+  width: 400px;
+}
+
+.BMI-section h2{
+  color: #71B280;
+  text-align: center;
+}
+
+.progress-section {
+ background: black;
+  opacity: .8;
+  height: 800px;
+  width: 400px; 
+}
+
+.progress-section h3 {
+  color: #71B280;
+  text-align: center;
+}
+
+.progress-section p {
+  color: #71B280;
+  text-align: center;
+}
+
+.calorie-section {
+  background: black;
+  opacity: .8;
+  height: 800px;
+  width: 400px;
+}
+
+.calorie-section h3{
+  color: #71B280;
+  text-align: center;  
+}
+
+.calorie-section p{
+  color: #71B280;
+  text-align: center;  
+}
+
+
+.calories-table {
+  opacity: .9;
+  height: 600px;
+  width: 350px;
+  display: inline-block;
+}
+
+.btn {
+  top: 500px;
+}
