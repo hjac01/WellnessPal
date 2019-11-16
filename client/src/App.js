@@ -1,9 +1,13 @@
 import React from "react";
+import './App.css'
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import { Layout, Header, HeaderRow, HeaderTabs, Tab, Drawer, Content, Footer} from 'react-mdl';
 import Result from "./pages/Result";
 import Wrapper from './components/Wrapper';
-import Navbar from "./components/Navbar";
+import Navbar from "./components/Navbar"
+import Main from './components/Main';
+import { Link } from 'react-router-dom';
+
 
 
 
@@ -17,6 +21,7 @@ function App() {
       <Navbar />
         <Wrapper>
           <Route exact path="/result" component={Result} />
+
       <Layout fixedHeader fixedTabs>
         <Header className='header-color'>
             <HeaderRow title="Wellness-Pal" />
@@ -32,9 +37,12 @@ function App() {
         </Content>
     </Layout>
     <Footer />
+
+
     </Wrapper>
       </div>
       </Router>
+
   );
 }
 

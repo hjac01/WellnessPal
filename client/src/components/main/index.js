@@ -1,18 +1,23 @@
 import React from 'react';
 import { Switch, Route} from 'react-router-dom';
-import Landing from '../Landing/index';
-import Profile from '../Profile/index';
-import Login from '../Login/index';
-import Articles from '../Articles/index'; 
-import CreateAccount from '../CreateAccount/index';
+import Landing from '../Landing';
+import Profile from '../Profile'
+import Login from '../Login';
+import Articles from '../Articles';
+import CreateAccount from '../CreateAccount';
+
+
 
 const Main = () => (
     <Switch> 
         <Route exact path='/' component={Landing} />
         <Route path='/profile' component={Profile} />
         <Route path='/login' component={Login} />
-        <Route path='/CreateAccount' component={CreateAccount} />
-        <Route path='/results' components={Articles} />
+
+        <Route path='/createAcount' component={CreateAccount} />
+        <Route path='/articles' components={Articles} />
+
+
     </Switch>
 )
 
