@@ -5,7 +5,7 @@ import { Layout, Header, HeaderRow, HeaderTabs, Tab, Drawer, Content, Footer} fr
 import Result from "./pages/Result";
 import Wrapper from './components/Wrapper';
 import Navbar from "./components/Navbar"
-import Main from './components/Main';
+import Main from './components/main';
 import { Link } from 'react-router-dom';
 
 
