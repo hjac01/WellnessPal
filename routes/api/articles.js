@@ -4,13 +4,12 @@ const articlesController = require("../../controllers/articlesController");
 
 router.route("/")
   .get(articlesController.findAll)
-  .post(articlesController.create);
+  // .post(articlesController.create);
 
 
-router
-  .route("/:id")
+// router
+//   .route("/:id")
 //   .get(articlesController.findById)
-//   .put(booksController.update)
-//   .delete(booksController.remove);
+
 
 module.exports = router;

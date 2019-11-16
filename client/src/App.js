@@ -3,12 +3,16 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import { Layout, Header, HeaderRow, HeaderTabs, Tab, Drawer, Content, Footer} from 'react-mdl';
 import Result from "./pages/Result"
 import Wrapper from './components/Wrapper';
+import Navbar from "./components/Navbar"
+
+
 
 function App() {
 
   return (
     <Router>
       <div>
+
       <Layout fixedHeader fixedTabs>
         <Header className='header-color'>
             <HeaderRow title="Wellness-Pal" />
@@ -24,9 +28,14 @@ function App() {
         </Content>
     </Layout>
     <Footer />
+=======
+      <Navbar />
         <Wrapper>
           <Route exact path="/result" component={Result} />
+
+          
         </Wrapper>
+  
       </div>
     </Router>
   );
