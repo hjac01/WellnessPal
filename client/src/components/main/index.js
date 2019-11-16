@@ -3,6 +3,7 @@ import { Switch, Route} from 'react-router-dom';
 import Landing from '../landing';
 import Profile from '../profile'
 import Login from '../login';
+import Articles from '../Articles';
 import CreateAcount from '../createAcoutn';
 
 const Main = () => (
@@ -11,7 +12,7 @@ const Main = () => (
         <Route path='/profile' component={Profile} />
         <Route path='/login' component={Login} />
         <Route path='/createAcount' component={CreateAcount} />
-        <Route path='/resolve' components={ArticleResults} />
+        <Route path='/articles' components={Articles} />
     </Switch>
 )
 
