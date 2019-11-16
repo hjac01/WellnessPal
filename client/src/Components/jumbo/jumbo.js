@@ -1,6 +1,5 @@
 import React from 'react';
 import "./jumbo.css"
-//import 'bootstrap/dist/css/bootstrap.min.css';
 import { Jumbotron, Container } from 'reactstrap';
 
 
