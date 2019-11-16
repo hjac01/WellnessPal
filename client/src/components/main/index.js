@@ -5,6 +5,7 @@ import Profile from '../Profile'
 import Login from '../Login';
 import Articles from '../Articles';
 import CreateAccount from '../CreateAccount';
+import Jumbo from '../Jumbo';
 
 
 
@@ -13,6 +14,7 @@ const Main = () => (
         <Route exact path='/' component={Landing} />
         <Route path='/profile' component={Profile} />
         <Route path='/login' component={Login} />
+        <Route path='/Jumbo' component={Jumbo} />
 
         <Route path='/createAcount' component={CreateAccount} />
         <Route path='/articles' components={Articles} />
