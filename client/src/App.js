@@ -4,12 +4,10 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import { Layout, Header, HeaderRow, HeaderTabs, Tab, Drawer, Content, Footer} from 'react-mdl';
 import Result from "./pages/Result";
 import Wrapper from './components/Wrapper';
-
 import Navbar from "./components/Navbar"
-import Main from './components/main/index';
+import Main from './components/Main';
 import { Link } from 'react-router-dom';
-=======
-import Navbar from "./components/Navbar";
+
 
 
 
@@ -18,9 +16,8 @@ import Navbar from "./components/Navbar";
 function App() {
 
   return (
+    <Router>
       <div>
-
-=======
       <Navbar />
         <Wrapper>
           <Route exact path="/result" component={Result} />
@@ -41,13 +38,7 @@ function App() {
     </Layout>
     <Footer />
 
-=======
-     <Navbar />
-        <Wrapper>
-          <Route exact path="/result" component={Result} />
-      </Wrapper>
-    </div>
-=======
+
     </Wrapper>
       </div>
       </Router>

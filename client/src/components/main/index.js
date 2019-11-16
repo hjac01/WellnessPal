@@ -1,17 +1,11 @@
 import React from 'react';
 import { Switch, Route} from 'react-router-dom';
-
-import Landing from '../landing';
-import Profile from '../profile'
-import Login from '../login';
+import Landing from '../Landing';
+import Profile from '../Profile'
+import Login from '../Login';
 import Articles from '../Articles';
-import CreateAcount from '../createAcoutn';
-=======
-import Landing from '../Landing/index';
-import Profile from '../Profile/index';
-import Login from '../Login/index';
-import Articles from '../Articles/index'; 
-import CreateAccount from '../CreateAccount/index';
+import CreateAccount from '../CreateAccount';
+
 
 
 const Main = () => (
@@ -20,11 +14,9 @@ const Main = () => (
         <Route path='/profile' component={Profile} />
         <Route path='/login' component={Login} />
 
-        <Route path='/createAcount' component={CreateAcount} />
+        <Route path='/createAcount' component={CreateAccount} />
         <Route path='/articles' components={Articles} />
-=======
-        <Route path='/CreateAccount' component={CreateAccount} />
-        <Route path='/results' components={Articles} />
+
 
     </Switch>
 )
