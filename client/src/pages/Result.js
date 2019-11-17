@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import API from "../utils/api"
-import Articles from '../components/Articles/index';
+import Articles from '../components/Articles';
 
 
 
