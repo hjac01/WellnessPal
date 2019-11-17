@@ -1,8 +1,8 @@
 import React from 'react';
 import { Switch, Route} from 'react-router-dom';
-import Landing from '../landing';
-import Profile from '../profile'
-import Login from '../login';
+import Landing from '../Landing';
+import Profile from '../Profile';
+import Login from '../Login';
 import Articles from '../Articles';
 import CreateAccount from '../CreateAccount';
 
@@ -14,7 +14,7 @@ const Main = () => (
         <Route path='/profile' component={Profile} />
         <Route path='/login' component={Login} />
 
-        <Route path='/createAcount' component={CreateAccount} />
+        <Route path='/createAccount' component={CreateAccount} />
         <Route path='/articles' components={Articles} />
 
 
