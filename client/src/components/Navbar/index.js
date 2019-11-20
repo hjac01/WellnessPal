@@ -19,10 +19,10 @@ class Navbar extends Component {
               <Link to="/result">Articles</Link>
             </li>
             <li className="BMR">
-                  <Link className=" BMR" to="./compnents/BMR">BMR Calculator</Link>
+                  <Link className=" BMR" to="/BMR">BMR Calculator</Link>
                 </li>
                 <li className="BMI">
-                <Link className=" BMI" to="./compnents/BMI">BMI Calculator</Link>
+                <Link className=" BMI" to="/BMI">BMI Calculator</Link>
               </li>
           </ul>
         </nav>
