@@ -19,7 +19,7 @@ const Login = () => {
                         style={{width: '800px'}}
                     />
                     <div></div>
-                    <Button raised accent ripple>Sign In</Button>
+                    <a href="/auth/google"><Button raised accent ripple>Sign In</Button></a>
                     </CardText>
             </Card>
         </div>
