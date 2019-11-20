@@ -20,6 +20,9 @@ const Profile = () => {
                     <section className="BMI-section">
                         <h2>BMI Calculatar</h2>
                     </section>
+                    <section className="BMR-section">
+                    <h2>BMR Calculatar</h2>
+                    </section>
                 </Cell>
                 <Cell col={4}>
                     <section className="progress-section">

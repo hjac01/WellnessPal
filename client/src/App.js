@@ -6,7 +6,7 @@ import Result from "./pages/Result";
 import Wrapper from './components/Wrapper';
 import Navbar from "./components/Navbar"
 import Main from './components/main';
-
+import { Link } from 'react-router-dom';
 
 
 
@@ -27,6 +27,7 @@ function App() {
             <HeaderRow title="Wellness-Pal" />
             <HeaderTabs className='header-color' ripple activeTab={1} onChange={(tabId) => { }}>
                 <Tab>BMI calculator</Tab>
+                <Tab>BMR calculator</Tab>
                 <Tab>Log in</Tab>
                 <Tab>Articles</Tab>
             </HeaderTabs>
