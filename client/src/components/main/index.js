@@ -5,6 +5,7 @@ import Profile from '../Profile';
 import Login from '../Login';
 import Articles from '../Articles';
 import CreateAccount from '../CreateAccount';
+import Result from "../../pages/Result";
 
 
 
@@ -13,9 +14,10 @@ const Main = () => (
         <Route exact path='/' component={Landing} />
         <Route path='/profile' component={Profile} />
         <Route path='/login' component={Login} />
+    
 
         <Route path='/createAccount' component={CreateAccount} />
-        <Route path='/articles' components={Articles} />
+        <Route path='/result' components={Result} />
 
 
     </Switch>
