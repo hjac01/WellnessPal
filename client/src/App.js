@@ -3,11 +3,15 @@ import './App.css'
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Layout, Header, HeaderRow, HeaderTabs, Tab, Drawer, Content, Footer} from 'react-mdl';
 import Result from "./pages/Result";
+//import Calcs from "./pages/calcs";
 import Wrapper from './components/Wrapper';
 import Navbar from "./components/Navbar"
+
+import Main from './components/main/index';
 import Main from './components/Main';
 import BMR from './components/BMR';
 import BMI from './components/BMI';
+
 import { Link } from 'react-router-dom';
 
 
