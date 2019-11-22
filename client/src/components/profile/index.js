@@ -12,7 +12,7 @@ const Profile = () => {
                     alt="avatar"
                     className="avatar-img"
                 /> */}
-                <h1> Welcome Back to Wellness Pal User (will display user name)</h1>
+                <h1> Welcome Back to WellnessPal User (will display user name)</h1>
             </div>
 
             <Grid className="Portfile-content">
