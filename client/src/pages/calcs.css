@@ -1,0 +1,24 @@
+ 
+ .flex-container {
+    display: flex;
+    height: auto;
+    width: auto;
+    align-content: space-between;
+  }
+
+
+ 
+
+.Bmi{
+    padding-left: 50px;
+    width:700px;
+    height:350px;
+
+}
+
+.Bmr{
+  
+    width:700px;
+    height:350px;
+
+}

@@ -19,7 +19,7 @@ const Profile = () => {
                 <Cell col={4}>
                     <section className="BMI-section">
                         <h2>BMI Calculatar</h2>
-                  <Link className=" BMI" to="./compnents/BMI">BMI Calculator</Link>
+               
                     </section>
                     <section className="BMR-section">
                     <h2>BMR Calculatar</h2>
