@@ -30,6 +30,7 @@
     "express": "^4.17.1",
     "if-env": "^1.0.4",
     "mongoose": "^5.7.11",
+    "passport-google-oauth": "^2.0.0",
     "passport-google-oauth2": "^0.2.0",
     "react-mdl": "^1.11.0",
     "react-router-dom": "^5.1.2"
