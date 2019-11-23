@@ -12,13 +12,14 @@ const Profile = () => {
                     alt="avatar"
                     className="avatar-img"
                 /> */}
-                <h1> Welcome Back to Wellness Pal User (will display user name)</h1>
+                <h1> Welcome Back to WellnessPal User (will display user name)</h1>
             </div>
 
             <Grid className="Portfile-content">
                 <Cell col={4}>
                     <section className="BMI-section">
                         <h2>BMI Calculatar</h2>
+               
                     </section>
                     <section className="BMR-section">
                     <h2>BMR Calculatar</h2>

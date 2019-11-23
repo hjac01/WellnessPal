@@ -5,7 +5,7 @@ const CreateAcount = () => {
     return (
         <div>
              <Card shadow={0} style={{width: '1600px', margin: 'auto', top: '60px'}}>
-                <CardTitle style={{color: '#71B280', height: '80px', background: 'black', opacity: '.8'}}> <h2>Sign In To Wellness Pal</h2></CardTitle>
+                <CardTitle style={{color: '#71B280', height: '80px', background: 'black', opacity: '.8'}}> <h2>Sign In To WellnessPal</h2></CardTitle>
                     <CardText style={{color: 'black',width: 'auto', height: '600px', background: '#71B280'}}>
                     <div>
                         <Textfield

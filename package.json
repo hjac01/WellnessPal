@@ -3,12 +3,14 @@
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "server": "nodemon server.js",
-    "client": "npm run start --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "if-env NODE_ENV=production && npm start || npm run start:prod",
+    "start:prod": "node server.js",
+    "dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
+    "client": "cd client && npm run start",
+    "seed": "node scripts/seedDB.js",
+    "install": "cd client && npm install",
+    "build": "cd client && npm run build",
+    "heroku-postbuild": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -26,6 +28,7 @@
     "axios": "^0.19.0",
     "cheerio": "^1.0.0-rc.3",
     "express": "^4.17.1",
+    "if-env": "^1.0.4",
     "mongoose": "^5.7.11",
     "passport-google-oauth": "^2.0.0",
     "passport-google-oauth2": "^0.2.0",

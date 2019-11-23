@@ -71,7 +71,8 @@ changeAll=(e)=> {
   
      <div className="Bmr">
      <div>
-         <h2>BMR Calculator</h2>
+         <h2>Base Metabolic Rate</h2>
+         <h3>Calculator</h3>
        </div>
          <form onSubmit={this.submitMe}>
          <label>

@@ -75,7 +75,8 @@ class Bmi extends Component {
    <container id = "calcs">
      <div className="Bmi">
      <div>
-         <h2>BMI Calculator</h2>
+         <h2>Body Mass Index</h2>
+         <h3>Calculator</h3>
        </div>
          <form onSubmit={this.submitMe}>
             <label>
@@ -91,9 +92,10 @@ class Bmi extends Component {
            <input type="text" name="weight" value={this.state.weight} onChange={this.weightchange}    />
            <br></br>
            <label>{this.state.checked} Hello {this.state.name}, Your BMI is {this.state.bmi} </label>
+           <br></br>
            <input type="submit" value="Submit"/>
          </form>
-     
+     <br></br>
      </div>
      </container>
    );

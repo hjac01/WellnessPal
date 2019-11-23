@@ -1,11 +1,17 @@
 import React from "react";
 import './App.css'
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Layout, Header, HeaderRow, HeaderTabs, Tab, Drawer, Content, Footer} from 'react-mdl';
 import Result from "./pages/Result";
+//import Calcs from "./pages/calcs";
 import Wrapper from './components/Wrapper';
 import Navbar from "./components/Navbar"
+
+import Main from './components/main/index';
 import Main from './components/Main';
+import BMR from './components/BMR';
+import BMI from './components/BMI';
+
 import { Link } from 'react-router-dom';
 
 
@@ -19,8 +25,12 @@ function App() {
     <Router>
       <div>
       <Navbar />
+      <Route exact path="/result" component={Result} />
+      <Route exact path="/BMR" component={BMR} />
+      <Route exact path="/BMI" component={BMI} />
         <Wrapper>
-          <Route exact path="/result" component={Result} />
+       
+    
 
       <Layout fixedHeader fixedTabs>
         <Header className='header-color'>
@@ -29,12 +39,13 @@ function App() {
                 <Tab>BMI calculator</Tab>
                 <Tab>BMR calculator</Tab>
                 <Tab>Log in</Tab>
-                <Tab>Articles</Tab>
+                <Tab eventkey="/result"title="Articles">Article</Tab>
             </HeaderTabs>
         </Header>
         <Drawer style={{background: 'black'}}/>
         <Content>
           <Main />
+      
         </Content>
     </Layout>
     <Footer />
