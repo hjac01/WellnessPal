@@ -34,15 +34,15 @@ function App() {
 
       <Layout fixedHeader fixedTabs>
         <Header className='header-color'>
-            <HeaderRow title="Wellness-Pal" />
-            <HeaderTabs className='header-color' ripple activeTab={1} onChange={(tabId) => { }}>
+            {/* <HeaderRow title="Wellness-Pal" /> */}
+            {/* <HeaderTabs className='header-color' ripple activeTab={1} onChange={(tabId) => { }}>
                 <Tab>BMI calculator</Tab>
                 <Tab>BMR calculator</Tab>
                 <Tab>Log in</Tab>
                 <Tab eventkey="/result"title="Articles">Article</Tab>
-            </HeaderTabs>
+            </HeaderTabs> */}
         </Header>
-        <Drawer style={{background: 'black'}}/>
+        {/* <Drawer style={{background: 'black'}}/> */}
         <Content>
           <Main />
       
