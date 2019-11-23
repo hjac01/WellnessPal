@@ -6,8 +6,7 @@ import Result from "./pages/Result";
 import calcs from "./pages/calcs";
 import Wrapper from './components/Wrapper';
 import Navbar from "./components/Navbar"
-import Main from './components/Main/index';
-// import Main from './components/Main';
+import Main from './components/Main';
 import BMR from './components/BMR';
 import BMI from './components/BMI';
 
